@@ -1,17 +1,17 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import RandomFox from "./components/RandomFox.vue";
+import ValorantAgents from "./components/ValorantAgents.vue";
 </script>
 
 <template>
   <div>
-    <h1>This page shows random picture of foxs</h1>
+    <h1>Welcome to Valorant agent newspaper</h1>
     <CatList />
     <Suspense>
-      <RandomFox />
+      <ValorantAgents />
       <template #fallback>
-        <img src="https://media.tenor.com/o8m3bKTsifUAAAAC/hold-on.gif" />
+        <p>Loading....</p>
       </template>
     </Suspense>
   </div>
@@ -19,7 +19,9 @@ import RandomFox from "./components/RandomFox.vue";
 
 <style scoped>
 h1 {
-  color: green;
+  color: black;
   font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 </style>
